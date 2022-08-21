@@ -5,3 +5,5 @@ docker build -t <IMAGE_NAME> .
 
 To run a docker container on this image, run:
 docker run -it --name <CONTAINER_NAME> --rm -p 5000:5000 <IMAGE_NAME>
+
+After running successfully, start using it from: http://127.0.0.1:5000/
