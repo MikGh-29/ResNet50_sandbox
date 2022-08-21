@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please upload an image</title>
+</head>
+<style>
+    .button {
+        border-radius: 4px;
+        margin: 4px 2px;
+        background-color: #4BB050;
+        color: white;
+        padding: 15px;
+        font-size: 16px;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+    }
+    .button1 {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+    }
+</style>
+<body>
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('process') }}">
+        <input type="text" name="img_label" class="button" style="width:50%;"/>
+        <p><input type="submit" name="submit_button" class="button button1"></p>
+    </form>
+</body>
+</html>
